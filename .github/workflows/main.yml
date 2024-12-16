@@ -1,0 +1,15 @@
+name: ci
+
+on:
+  push:
+    branches: main
+
+jobs:
+  login:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Login to r.s.c
+        uses: docker/login-action@v3
+        with:
+          registry: registry.suse.com
