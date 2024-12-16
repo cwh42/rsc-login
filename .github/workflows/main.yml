@@ -14,5 +14,5 @@ jobs:
         with:
           registry: registry.suse.com
           username: ${{ secrets.RSC_USER }}
-          password: ${{ secrets.RSC_REGCODE }}
+          password: ${{ secrets.RSC_KEY }}
 
