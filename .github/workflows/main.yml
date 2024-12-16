@@ -13,3 +13,6 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: registry.suse.com
+          username: ${{ secrets.RSC_USER }}
+          password: ${{ secrets.RSC_REGCODE }}
+
