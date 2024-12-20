@@ -2,7 +2,7 @@ name: ci
 
 on:
   schedule:
-    - cron: "*/2 * * * 1,2"
+    - cron: "*/5 * * * *"
   push:
     branches: main
 
@@ -12,10 +12,10 @@ jobs:
     environment: test
     steps:
       -
-        name: Login to r.s.c
+        name: Login to r.r.c
         uses: docker/login-action@v3
         with:
-          registry: registry.suse.com
+          registry: registry.rancher.com
           username: ${{ secrets.RSC_USER }}
           password: ${{ secrets.RSC_KEY }}
 
